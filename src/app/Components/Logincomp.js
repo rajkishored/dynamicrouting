@@ -78,6 +78,7 @@ const LogComp=()=>{
                 </div> 
                 <ToastContainer/>
           </form>
+          <h2>hello</h2>
         </div>
         
     )
