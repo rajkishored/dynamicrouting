@@ -1,26 +1,105 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.navv{
+  max-width: 100%;
+  border-radius: 3px;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+nav ul{
+   display: flex;
+   justify-content: center;
+   gap:50px;
+   padding: 8px;
+   
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+nav{
+  max-width: 40%;
+  margin:auto;
+  background-color: aliceblue;
+  border-radius: 12px;
+  
+}
+nav ul li{
+  list-style: none;
+  text-decoration: none;
+}
+.log{
+  max-width: 90%;
+  margin: auto;
+  position: relative;
+}
+.logfor{
+  max-width: 40%;
+  margin: auto;
+  background-color: rgb(253, 253, 249);
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  box-shadow:0px 0px 0.8px 0px black ;
+  position: absolute;
+  left:40%;
+  top:-1000px
+  
+}
+.logfor2{
+transition: 500ms;
+background-color: antiquewhite;
+top:190px;
+animation: bounce 1s 1;
+}
+/* @keyframes bounce{
+  0%{
+    top:150px;
   }
+  
+  100%{
+    bottom:0px;
+  }
+
+} */
+.inlog{
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  gap:15px;
+  margin: auto;
+  padding: 20px 40px;
+  
+}
+.btn{
+  max-width: 40px;
+  margin: auto;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+.formm{
+   max-width: 70%;
+   margin: auto;
+}
+
+
+.results{
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content:center;
+  gap:15%;
+ 
+  background-color: rgba(184, 244, 130, 0.852);
+}
+.Ind, .Aus{
+ padding: 8px;
+
+}
+span{
+  color: black;
+}
+.results h3{
+   box-shadow: 0px 0px 2px 0px rgb(79, 75, 75);
+}
+.tleg{
+ 
+  display: flex;
+}
+span{
+  display: flex;
 }
